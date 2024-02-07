@@ -31,7 +31,7 @@ public class TipoDependenciaController {
 	public ResponseEntity<List<TipoDependenciaResponse>> listaDependencia(){
 		return ResponseEntity.ok(dependenciaService.listaDependencia());
 	}
-	
+	//PUT
 	@PutMapping("/detalleDependencia/{id}")
 	public void guardarDependencia (@PathVariable int id, @RequestBody DetalleDependenciaRequest detalleReq) {
 		dependenciaService.modificarDependencia(id, detalleReq);
