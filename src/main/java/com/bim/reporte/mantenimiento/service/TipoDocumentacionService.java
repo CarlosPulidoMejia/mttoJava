@@ -1,0 +1,10 @@
+package com.bim.reporte.mantenimiento.service;
+
+import java.util.List;
+
+import com.bim.reporte.mantenimiento.response.TipoDocumentacionResponse;
+
+public interface TipoDocumentacionService {
+
+	public List<TipoDocumentacionResponse> listaDocumentacion();
+}
