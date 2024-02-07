@@ -40,6 +40,8 @@ public class TipoDependenciaServiceImpl implements TipoDependenciaService{
 			CatDependencias detDepEnt = detDependencia.get();
 			detDepEnt.setTipoDependencia(detallDependenciaRequest.getTipo_dependencia_vch());
 			detDepEnt.setStatus(detallDependenciaRequest.isStatus());
+			
+			catDependenciaRepo.save(detDepEnt);
 		}
 	}
 
