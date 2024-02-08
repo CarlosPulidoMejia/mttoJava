@@ -1,6 +1,9 @@
 package com.bim.reporte.mantenimiento.request;
 
 
+import java.util.List;
+
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

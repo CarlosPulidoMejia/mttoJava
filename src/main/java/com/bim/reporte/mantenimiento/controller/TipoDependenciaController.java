@@ -33,14 +33,14 @@ public class TipoDependenciaController {
 		return ResponseEntity.ok(dependenciaService.listaDependencia());
 	}
 
-	@PutMapping("/detalleDependencia/{id}")
-	public void guardarDependencia (@PathVariable int id, @RequestBody DetalleDependenciaRequest detalleReq) {
+	@PutMapping("/modificarDependencia/{id}")
+	public void modificarDependencia (@PathVariable int id, @RequestBody DetalleDependenciaRequest detalleReq) {
 		dependenciaService.modificarDependencia(id, detalleReq);
 	}
 	
-	@PostMapping("guardarDependencia")
-	public void guardarDependencia (@RequestBody DetalleDependenciaRequest dependencia) {
-		
+	@PostMapping("crearDependencia")
+	public void crearDependencia (@RequestBody DetalleDependenciaRequest dependencia) {
+		dependenciaService.crearDependencia(dependencia);
 	}
 	
 }

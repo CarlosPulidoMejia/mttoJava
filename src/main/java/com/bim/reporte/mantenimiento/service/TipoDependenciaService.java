@@ -9,5 +9,7 @@ public interface TipoDependenciaService {
 
 	public List<TipoDependenciaResponse> listaDependencia();
 	
+	public void crearDependencia(DetalleDependenciaRequest dependencia);
+	
 	public void modificarDependencia (int idDependencia, DetalleDependenciaRequest detallDependencia);
 }

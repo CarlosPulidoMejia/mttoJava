@@ -44,5 +44,17 @@ public class TipoDependenciaServiceImpl implements TipoDependenciaService{
 			catDependenciaRepo.save(detDepEnt);
 		}
 	}
+	
+	public void crearDependencia (DetalleDependenciaRequest dependencia) {
+		// TODO Auto-generated method stub
+		if(dependencia != null) {
+			CatDependencias nuevaDepEnt = new CatDependencias(); 
+			nuevaDepEnt.setStatus(dependencia.isStatus());
+			nuevaDepEnt.setTipoDependencia(dependencia.getTipo_dependencia_vch());
+			
+			catDependenciaRepo.save(nuevaDepEnt);
+		}
+		
+	}
 
 }
