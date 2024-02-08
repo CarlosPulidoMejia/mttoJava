@@ -38,7 +38,7 @@ public class TipoDependenciaController {
 		dependenciaService.modificarDependencia(id, detalleReq);
 	}
 	
-	@PostMapping("crearDependencia")
+	@PostMapping("/crearDependencia")
 	public void crearDependencia (@RequestBody DetalleDependenciaRequest dependencia) {
 		dependenciaService.crearDependencia(dependencia);
 	}

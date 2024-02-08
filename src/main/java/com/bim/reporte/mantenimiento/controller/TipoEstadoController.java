@@ -30,12 +30,12 @@ public class TipoEstadoController {
 		return ResponseEntity.ok(estadoProyectoService.listaEstado());
 	}
 	
-	@PutMapping("modificarEstado/{id}")
+	@PutMapping("/modificarEstado/{id}")
 	public void modificarEstado(@PathVariable int id, @RequestBody DetalleEstadoProyectoRequest detalleReq) {
 		estadoProyectoService.modificarEstado(id, detalleReq);
 	}
 	
-	@PostMapping("crearEstado")
+	@PostMapping("/crearEstado")
 	public void crearEstado(@RequestBody DetalleEstadoProyectoRequest estado) {
 		estadoProyectoService.crearEstado(estado);
 	}

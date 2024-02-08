@@ -35,7 +35,7 @@ public class TipoDocumentacionController {
 		documentacionService.modificarDocumentacion(id, detalleReq);
 	}
 	
-	@PostMapping("crearDocumentacion")
+	@PostMapping("/crearDocumentacion")
 	public void crearDocumentacion (@RequestBody DetalleDocumentacionRequest documentacion) {
 		documentacionService.crearDocumentacion(documentacion);
 	}
