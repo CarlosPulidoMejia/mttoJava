@@ -54,7 +54,6 @@ public class TipoDependenciaServiceImpl implements TipoDependenciaService{
 			
 			catDependenciaRepo.save(nuevaDepEnt);
 		}
-		
 	}
 
 }
