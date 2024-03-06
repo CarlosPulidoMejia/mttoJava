@@ -25,7 +25,7 @@ public class TipoDependenciaServiceImpl implements TipoDependenciaService{
 		
 		List<TipoDependenciaResponse> listaDepResponse = listaDep.stream()
 				.map(lstDep ->
-				new TipoDependenciaResponse(lstDep.getIdDependencia(), lstDep.getTipoDependencia())
+				new TipoDependenciaResponse(lstDep.getIdDependencia(), lstDep.getStatus(), lstDep.getTipoDependencia())
 				//new TipoDependenciaResponse(lstDep.getIdDependencia(), lstDep.getTipoDependencia()
 				//		)
 				).collect(Collectors.toList());

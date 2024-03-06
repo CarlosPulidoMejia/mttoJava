@@ -27,6 +27,7 @@ public class TipoDocumentacionServiceImpl implements TipoDocumentacionService{
 				.map(lstDoc ->
 				new TipoDocumentacionResponse(
 						lstDoc.getIdDocumentacion(),
+						lstDoc.getStatus(),
 						lstDoc.getTipoDocumentacion())).collect(Collectors.toList());
 			
 		return listaDocResponse;

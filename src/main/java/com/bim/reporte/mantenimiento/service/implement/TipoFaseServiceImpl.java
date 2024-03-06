@@ -27,7 +27,7 @@ public class TipoFaseServiceImpl implements TipoFaseService {
 		
 		List<TipoFaseResponse> listaFaseResponse = listaFase.stream()
 				.map(lstFase ->
-				new TipoFaseResponse(lstFase.getIdTipoFase(), 
+				new TipoFaseResponse(lstFase.getIdTipoFase(), lstFase.getStatus(),
 						lstFase.getTipoFase()
 						)
 				).collect(Collectors.toList());

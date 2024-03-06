@@ -26,7 +26,7 @@ public class TipoEstadoServiceImpl implements TipoEstadoProyectoService {
 		
 		List<TipoEstadoProyectoResponse> listaEstadoResponse = listaEstado.stream()
 				.map(lstEstado -> 
-				new TipoEstadoProyectoResponse(lstEstado.getIdTipoEstado(), 
+				new TipoEstadoProyectoResponse(lstEstado.getIdTipoEstado(), lstEstado.getStatus(),
 						lstEstado.getTipoEstado()
 						)
 				).collect(Collectors.toList());

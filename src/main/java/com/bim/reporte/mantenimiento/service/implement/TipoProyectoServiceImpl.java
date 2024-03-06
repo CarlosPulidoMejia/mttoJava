@@ -27,7 +27,7 @@ public class TipoProyectoServiceImpl implements TipoProyectoService{
 		
 		List<TipoProyectoResponse> lstTipoProy = lista.stream()
 				.map(tipoProy -> 
-				new TipoProyectoResponse(tipoProy.getIdTipoProyecto(),tipoProy.getTipoProyecto()
+				new TipoProyectoResponse(tipoProy.getIdTipoProyecto(), tipoProy.getStatus(), tipoProy.getTipoProyecto()
 						)
 				).collect(Collectors.toList());
 		
